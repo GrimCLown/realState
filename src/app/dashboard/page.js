@@ -1,13 +1,14 @@
+import React from 'react'
 import Image from 'next/image'
-import MainImg2 from '/public/images/main2.jpg'
-import AboutUs from '@/components/aboutUs';
-import Projects from '@/components/projects';
-export default function Home() {
+import MainImg from '../../../public/images/main.jpg'
+import MainImg2 from '../../../public/images/main2.jpg'
+
+const Dashboard = () => {
   return (
     <div>
       <h1 className='text-4xl font-bold'>BLUE BEYOND</h1>
       <Image
-        className='w-full h-[300px] object-cover '
+        className='w-auto h-auto object-cover '
         src={MainImg2}
         alt="Picture of the author"
         priority={true}
@@ -30,9 +31,9 @@ export default function Home() {
       <h1 className='text-4xl'>20</h1>
         <p>Experience</p></div>
     </div>
-    <AboutUs />
-    <Projects/>
 
     </div>
-  );
+  )
 }
+
+export default Dashboard
