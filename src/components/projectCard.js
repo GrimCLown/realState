@@ -8,7 +8,7 @@ const projectCard = ({img, title}) => {
 
 
   return (
-    <div className=''>
+    <div className='bg-[#262626]'>
         <Image
             className='object-cover h-full w-[1000px'
             src={img}
